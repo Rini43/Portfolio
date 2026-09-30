@@ -1,1139 +1,999 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title> Rinimol R | AI/ML Engineer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-/* =========================
-   GLOBAL
-========================= */
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:"Segoe UI", Arial, sans-serif;
-scroll-behavior:smooth;
-}
+    <meta name="description"
+        content="Rinimol R - AI/ML Engineer specializing in Machine Learning, Deep Learning, NLP and Computer Vision">
 
-body{
-background:linear-gradient(135deg,#0f172a,#1e293b,#0f172a);
-min-height:100vh;
-color:white;
-overflow-x:hidden;
-}
+    <meta name="author" content="Rinimol R">
 
-body::before{
-content:"";
-position:fixed;
-width:400px;
-height:400px;
-background:#00ffff30;
-border-radius:50%;
-top:-150px;
-left:-100px;
-filter:blur(100px);
-}
+    <title>Rinimol R | AI/ML Engineer</title>
 
-body::after{
-content:"";
-position:fixed;
-width:400px;
-height:400px;
-background:#ff00ff20;
-border-radius:50%;
-bottom:-150px;
-right:-100px;
-filter:blur(100px);
-}
-
-.container{
-width:90%;
-max-width:1200px;
-margin:auto;
-}
-
-.glass{
-background:rgba(255,255,255,0.08);
-backdrop-filter:blur(15px);
-border:1px solid rgba(255,255,255,0.15);
-border-radius:25px;
-box-shadow:0 8px 32px rgba(0,0,0,0.3);
-}
-/* =========================
-   NAVBAR
-========================= */
-nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:25px 0;
-}
-
-.logo{
-font-size:28px;
-font-weight:bold;
-color:#00ffff;
-}
-
-nav ul{
-display:flex;
-list-style:none;
-gap:20px;
-}
-
-nav a{
-text-decoration:none;
-color:white;
-}
-
-.hero{
-display:flex;
-flex-wrap:wrap;
-align-items:center;
-justify-content:space-between;
-padding:50px 0;
-gap:30px;
-}
-
-.profile-card{
-padding:25px;
-text-align:center;
-width:320px;
-}
-
-.profile-card img{
-width:220px;
-height:220px;
-border-radius:50%;
-object-fit:cover;
-border:4px solid rgba(255,255,255,0.2);
-}
-
-.edit-btn{
-margin-top:15px;
-padding:10px 20px;
-background:#00ffff;
-border:none;
-border-radius:30px;
-cursor:pointer;
-font-weight:bold;
-}
-
-.hero-content{
-flex:1;
-min-width:300px;
-}
-
-.hero-content h1{
-font-size:60px;
-margin-bottom:10px;
-}
-
-.hero-content h2{
-color:#00ffff;
-margin-bottom:20px;
-}
-
-.hero-content p{
-line-height:1.8;
-color:#d1d5db;
-}
-
-section{
-margin-top:60px;
-}
-
-.section-title{
-font-size:40px;
-margin-bottom:30px;
-text-align:center;
-}
-
-.skills{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:20px;
-}
-
-.skill{
-padding:25px;
-text-align:center;
-}
-
-.skill h3{
-color:#00ffff;
-}
-
-.projects{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:25px;
-}
-
-.project{
-padding:25px;
-}
-
-.project h3{
-margin-bottom:15px;
-color:#00ffff;
-}
-
-.contact{
-padding:40px;
-text-align:center;
-}
-
-.contact p{
-margin:10px 0;
-}
-
-footer{
-text-align:center;
-padding:30px;
-color:#aaa;
-}
-
-.fade{
-opacity:0;
-transform:translateY(50px);
-transition:1s;
-}
-
-.fade.show{
-opacity:1;
-transform:translateY(0);
-}
-  
-/* =========================
-   HERO
-========================= */
-
-@media(max-width:768px){
-.hero-content h1{
-font-size:42px;
-}
-.hero{
-justify-content:center;
-text-align:center;
-}
-}
-</style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="container">
+<!-- ================= HEADER ================= -->
 
-<nav>
-<div class="logo">Rinimol R</div>
+<header class="header">
 
-<ul>
-<li><a href="#about">About</a></li>
-<!-- =========================
-     ABOUT
-========================= -->
+    <div class="container nav-container">
+
+        <a href="#home" class="logo">
+            Rinimol R
+        </a>
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Toggle navigation">
+            ☰
+        </button>
+
+        <nav id="navbar">
+
+            <ul class="nav-links">
+
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main>
+
+<!-- ================= HERO ================= -->
+
+<section id="home" class="hero">
+
+    <div class="container hero-content">
+
+        <div class="hero-text">
+
+            <p class="eyebrow">
+                AI / ML ENGINEER
+            </p>
+
+            <h1>
+                Rinimol R
+            </h1>
+
+            <h2>
+                Building Intelligent Solutions with
+                <span>AI & Machine Learning</span>
+            </h2>
+
+            <p class="hero-description">
+                AI/ML Engineer with a Computer Science background and
+                hands-on experience across Machine Learning, Deep Learning,
+                Natural Language Processing and Computer Vision.
+            </p>
+
+            <div class="hero-tags">
+
+                <span>Machine Learning</span>
+                <span>Deep Learning</span>
+                <span>NLP</span>
+                <span>Computer Vision</span>
+
+            </div>
+
+            <div class="hero-buttons">
+
+                <a href="#projects" class="btn primary-btn">
+                    View Projects
+                </a>
+
+                <a href="#contact" class="btn secondary-btn">
+                    Let's Connect
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-card glass">
+
+            <div class="profile-placeholder">
+                RR
+            </div>
+
+            <h3>
+                AI/ML Engineer
+            </h3>
+
+            <p>
+                Machine Learning • Deep Learning • NLP • Computer Vision
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
 
 <section id="about" class="section">
 
-<div class="container">
+    <div class="container">
 
-<h2 class="section-title">
-About Me
-</h2>
+        <div class="section-heading">
 
-<p class="section-subtitle">
-A brief introduction to my professional background and technical journey.
-</p>
+            <p class="eyebrow">
+                ABOUT ME
+            </p>
 
-<div class="card">
+            <h2>
+                From Computer Science to AI/ML Engineering
+            </h2>
 
-<p class="about-text">
+        </div>
 
-AI/ML Engineer with a Computer Science background and hands-on
-project experience across machine learning, deep learning,
-NLP and computer vision.
 
-<br><br>
+        <div class="about-card glass">
 
-Completed the core coursework of ICT Academy of Kerala's
-Certified Specialist in Artificial Intelligence and Machine
-Learning program, covering Python, data preprocessing,
-supervised and unsupervised learning, model evaluation,
-neural networks, CNNs, NLP, transformers and Generative AI.
+            <p>
+                I am an AI/ML Engineer with a Computer Science background
+                and hands-on project experience across machine learning,
+                deep learning, natural language processing and computer
+                vision.
+            </p>
 
-<br><br>
+            <p>
+                I completed the core coursework of ICT Academy of Kerala's
+                Certified Specialist in Artificial Intelligence and Machine
+                Learning program, covering Python, data preprocessing,
+                supervised and unsupervised learning, model evaluation,
+                neural networks, CNNs, NLP, transformers and Generative AI.
+            </p>
 
-I also bring 3+ years of professional experience in
-documentation, coordination and stakeholder communication,
-providing strong ownership, attention to detail and
-cross-functional collaboration.
+            <p>
+                Before transitioning into AI/ML, I worked in professional
+                environments involving documentation, coordination,
+                reporting and stakeholder communication. This experience
+                strengthened my attention to detail, organization,
+                ownership and cross-functional collaboration.
+            </p>
 
-</p>
+            <p>
+                I am interested in building practical AI solutions that
+                solve real-world problems and create measurable value.
+            </p>
 
-</div>
+        </div>
 
-</div>
+    </div>
 
 </section>
 
-<li><a href="#skills">Skills</a></li>
-!-- =========================
-     SKILLS
-========================= -->
+
+<!-- ================= SKILLS ================= -->
 
 <section id="skills" class="section">
 
-<div class="container">
+    <div class="container">
 
-<h2 class="section-title">
-Technical Skills
-</h2>
+        <div class="section-heading center">
 
-<p class="section-subtitle">
-Technologies, frameworks and concepts I work with.
-</p>
+            <p class="eyebrow">
+                TECHNICAL SKILLS
+            </p>
 
+            <h2>
+                Technologies & Concepts
+            </h2>
 
-<div class="skills-grid">
-
-
-<div class="card skill-card">
-
-<h3>
-Programming
-</h3>
-
-<p>
-Python, C, C++, HTML
-</p>
-
-</div>
+        </div>
 
 
-<div class="card skill-card">
-
-<h3>
-Data & Visualization
-</h3>
-
-<p>
-NumPy, Pandas, Matplotlib, Seaborn,
-Exploratory Data Analysis
-</p>
-
-</div>
+        <div class="skills-grid">
 
 
-<div class="card skill-card">
+            <div class="skill-card glass">
 
-<h3>
-Machine Learning
-</h3>
+                <h3>Programming</h3>
 
-<p>
-Regression, Logistic Regression, KNN,
-Decision Trees, Random Forest, SVM,
-Naive Bayes, Ensemble Learning, XGBoost,
-scikit-learn
-</p>
+                <p>
+                    Python, C, C++, HTML
+                </p>
 
-</div>
+            </div>
 
 
-<div class="card skill-card">
+            <div class="skill-card glass">
 
-<h3>
-ML Engineering
-</h3>
+                <h3>Data & Visualization</h3>
 
-<p>
-Data preprocessing, feature engineering,
-encoding, scaling, cross-validation,
-ROC-AUC, GridSearchCV,
-RandomizedSearchCV and hyperparameter tuning
-</p>
+                <p>
+                    NumPy, Pandas, Matplotlib, Seaborn,
+                    Exploratory Data Analysis
+                </p>
 
-</div>
+            </div>
 
 
-<div class="card skill-card">
+            <div class="skill-card glass">
 
-<h3>
-Unsupervised Learning
-</h3>
+                <h3>Machine Learning</h3>
 
-<p>
-K-Means, Agglomerative Clustering,
-DBSCAN, PCA, t-SNE, UMAP
-</p>
+                <p>
+                    Regression, Logistic Regression, KNN,
+                    Decision Trees, Random Forest, SVM,
+                    Naive Bayes, Ensemble Learning,
+                    XGBoost, scikit-learn
+                </p>
 
-</div>
-
-
-<div class="card skill-card">
-
-<h3>
-Deep Learning
-</h3>
-
-<p>
-Neural Networks, Backpropagation, CNNs,
-regularization, dropout, early stopping,
-TensorFlow/Keras and PyTorch
-</p>
-
-</div>
+            </div>
 
 
-<div class="card skill-card">
+            <div class="skill-card glass">
 
-<h3>
-Computer Vision
-</h3>
+                <h3>ML Engineering</h3>
 
-<p>
-Image preprocessing, OpenCV,
-image classification, VGG, ResNet
-and EfficientNet
-</p>
+                <p>
+                    Data preprocessing, feature engineering,
+                    encoding, scaling, cross-validation,
+                    ROC-AUC, GridSearchCV, RandomizedSearchCV
+                    and hyperparameter tuning
+                </p>
 
-</div>
-
-
-<div class="card skill-card">
-
-<h3>
-NLP & GenAI
-</h3>
-
-<p>
-Tokenization, BoW, TF-IDF, Word2Vec,
-GloVe, FastText, RNN, LSTM, GRU,
-Transformers, BERT, T5, GPT fundamentals,
-LLM applications, RAG and FAISS
-</p>
-
-</div>
+            </div>
 
 
-<div class="card skill-card">
+            <div class="skill-card glass">
 
-<h3>
-Tools & Platforms
-</h3>
+                <h3>Unsupervised Learning</h3>
 
-<p>
-Git, GitHub, VS Code, Jupyter,
-Google Colab and MySQL
-</p>
+                <p>
+                    K-Means, Agglomerative Clustering,
+                    DBSCAN, PCA, t-SNE, UMAP
+                </p>
 
-</div>
+            </div>
 
 
-</div>
+            <div class="skill-card glass">
 
-</div>
+                <h3>Deep Learning</h3>
+
+                <p>
+                    Neural Networks, Backpropagation, CNNs,
+                    regularization, dropout, early stopping,
+                    TensorFlow/Keras and PyTorch
+                </p>
+
+            </div>
+
+
+            <div class="skill-card glass">
+
+                <h3>Computer Vision</h3>
+
+                <p>
+                    Image preprocessing, OpenCV,
+                    image classification, VGG, ResNet
+                    and EfficientNet
+                </p>
+
+            </div>
+
+
+            <div class="skill-card glass">
+
+                <h3>NLP & GenAI</h3>
+
+                <p>
+                    Tokenization, BoW, TF-IDF, Word2Vec,
+                    GloVe, FastText, RNN, LSTM, GRU,
+                    Transformers, BERT, T5, GPT fundamentals,
+                    LLM applications, RAG and FAISS
+                </p>
+
+            </div>
+
+
+            <div class="skill-card glass">
+
+                <h3>Tools & Platforms</h3>
+
+                <p>
+                    Git, GitHub, VS Code, Jupyter,
+                    Google Colab and MySQL
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
 
 </section>
- 
-<li><a href="#projects">Projects</a></li>
-<!-- =========================
-     PROJECTS
-========================= -->
+
+
+<!-- ================= PROJECTS ================= -->
 
 <section id="projects" class="section">
 
-<div class="container">
+    <div class="container">
 
-<h2 class="section-title">
-Selected Projects
-</h2>
+        <div class="section-heading center">
 
-<p class="section-subtitle">
-A selection of AI and machine learning projects.
-</p>
+            <p class="eyebrow">
+                SELECTED PROJECTS
+            </p>
 
+            <h2>
+                AI/ML Projects
+            </h2>
 
-<div class="card project-card">
-
-<div class="project-number">
-01 — MACHINE LEARNING
-</div>
-
-<h3>
-Credit Default Prediction & Preprocessing
-</h3>
-
-<p class="tech">
-Python • scikit-learn • XGBoost
-</p>
-
-<ul>
-
-<li>
-Built an end-to-end ML pipeline using the UCI Credit Card
-Default dataset.
-</li>
-
-<li>
-Performed EDA, missing/duplicate/outlier handling,
-categorical encoding, scaling and feature selection.
-</li>
-
-<li>
-Benchmarked multiple classification algorithms including
-Logistic Regression, Decision Tree, Random Forest, SVM,
-KNN, Naive Bayes, AdaBoost, Gradient Boosting and XGBoost.
-</li>
-
-<li>
-Used cross-validation and hyperparameter tuning.
-</li>
-
-</ul>
-
-</div>
+        </div>
 
 
-<div class="card project-card">
-
-<div class="project-number">
-02 — COMPUTER VISION
-</div>
-
-<h3>
-Fruit Image Classification using CNN
-</h3>
-
-<p class="tech">
-TensorFlow • Keras
-</p>
-
-<ul>
-
-<li>
-Designed and trained a CNN image-classification pipeline
-using the Fruits-360 dataset.
-</li>
-
-<li>
-Implemented image preprocessing, training and validation.
-</li>
-
-<li>
-Applied dropout and batch normalization.
-</li>
-
-<li>
-Explored VGG, ResNet and EfficientNet transfer-learning concepts.
-</li>
-
-</ul>
-
-</div>
+        <div class="projects-grid">
 
 
-<div class="card project-card">
+            <!-- PROJECT 1 -->
 
-<div class="project-number">
-03 — COMPUTER VISION
-</div>
+            <article class="project-card glass">
 
-<h3>
-CIFAR-100 Image Classification with CNNs
-</h3>
+                <span class="project-number">
+                    01 — MACHINE LEARNING
+                </span>
 
-<p class="tech">
-TensorFlow • Keras
-</p>
+                <h3>
+                    Credit Default Prediction
+                </h3>
 
-<ul>
+                <p class="project-tech">
+                    Python • scikit-learn • XGBoost
+                </p>
 
-<li>
-Built CNN architectures for 100-class image classification.
-</li>
+                <ul>
 
-<li>
-Experimented with batch size, epochs, learning rate,
-batch normalization, dropout and pooling.
-</li>
+                    <li>
+                        Built an end-to-end ML pipeline using
+                        the UCI Credit Card Default dataset.
+                    </li>
 
-<li>
-Investigated overfitting and slow convergence.
-</li>
+                    <li>
+                        Performed EDA, missing-value, duplicate
+                        and outlier handling, encoding, scaling
+                        and feature selection.
+                    </li>
 
-</ul>
+                    <li>
+                        Benchmarked multiple classification
+                        algorithms including Logistic Regression,
+                        Decision Tree, Random Forest, SVM, KNN,
+                        Naive Bayes, AdaBoost, Gradient Boosting
+                        and XGBoost.
+                    </li>
 
-</div>
+                    <li>
+                        Applied cross-validation and
+                        hyperparameter tuning.
+                    </li>
 
+                </ul>
 
-<div class="card project-card">
-
-<div class="project-number">
-04 — NLP
-</div>
-
-<h3>
-NLP Text Classification / Spam Detection
-</h3>
-
-<p class="tech">
-Python • scikit-learn • NLTK
-</p>
-
-<ul>
-
-<li>
-Built a text-classification pipeline using normalization,
-tokenization, Bag-of-Words and TF-IDF.
-</li>
-
-<li>
-Implemented ML-based spam/ham classification.
-</li>
-
-</ul>
-
-</div>
+            </article>
 
 
-<div class="card project-card">
+            <!-- PROJECT 2 -->
 
-<div class="project-number">
-05 — NLP
-</div>
+            <article class="project-card glass">
 
-<h3>
-Recipe Reviews NLP Analysis
-</h3>
+                <span class="project-number">
+                    02 — COMPUTER VISION
+                </span>
 
-<p class="tech">
-Python • Pandas • scikit-learn
-</p>
+                <h3>
+                    Fruit Image Classification
+                </h3>
 
-<ul>
+                <p class="project-tech">
+                    TensorFlow • Keras • CNN
+                </p>
 
-<li>
-Applied text preprocessing and feature engineering
-to recipe-review data.
-</li>
+                <ul>
 
-<li>
-Compared machine-learning approaches for review classification.
-</li>
+                    <li>
+                        Designed and trained a CNN classification
+                        pipeline using the Fruits-360 dataset.
+                    </li>
 
-</ul>
+                    <li>
+                        Implemented image preprocessing,
+                        training and validation workflows.
+                    </li>
 
-</div>
+                    <li>
+                        Applied dropout and batch normalization.
+                    </li>
+
+                    <li>
+                        Explored VGG, ResNet and EfficientNet
+                        transfer-learning concepts.
+                    </li>
+
+                </ul>
+
+            </article>
 
 
-</div>
+            <!-- PROJECT 3 -->
+
+            <article class="project-card glass">
+
+                <span class="project-number">
+                    03 — COMPUTER VISION
+                </span>
+
+                <h3>
+                    CIFAR-100 Image Classification
+                </h3>
+
+                <p class="project-tech">
+                    TensorFlow • Keras • CNN
+                </p>
+
+                <ul>
+
+                    <li>
+                        Built CNN architectures for 100-class
+                        image classification.
+                    </li>
+
+                    <li>
+                        Experimented with batch size, epochs,
+                        learning rate, batch normalization,
+                        dropout and pooling.
+                    </li>
+
+                    <li>
+                        Investigated overfitting and slow
+                        convergence through systematic
+                        experimentation.
+                    </li>
+
+                </ul>
+
+            </article>
+
+
+            <!-- PROJECT 4 -->
+
+            <article class="project-card glass">
+
+                <span class="project-number">
+                    04 — NLP
+                </span>
+
+                <h3>
+                    NLP Spam Detection
+                </h3>
+
+                <p class="project-tech">
+                    Python • scikit-learn • NLTK
+                </p>
+
+                <ul>
+
+                    <li>
+                        Built a text-classification pipeline using
+                        normalization and tokenization.
+                    </li>
+
+                    <li>
+                        Used Bag-of-Words and TF-IDF feature
+                        representations.
+                    </li>
+
+                    <li>
+                        Implemented machine-learning based
+                        spam/ham classification.
+                    </li>
+
+                </ul>
+
+            </article>
+
+
+            <!-- PROJECT 5 -->
+
+            <article class="project-card glass">
+
+                <span class="project-number">
+                    05 — NLP
+                </span>
+
+                <h3>
+                    Recipe Reviews NLP Analysis
+                </h3>
+
+                <p class="project-tech">
+                    Python • Pandas • scikit-learn
+                </p>
+
+                <ul>
+
+                    <li>
+                        Applied text preprocessing and feature
+                        engineering to recipe-review data.
+                    </li>
+
+                    <li>
+                        Evaluated machine-learning approaches
+                        for review classification.
+                    </li>
+
+                    <li>
+                        Developed a sentiment-analysis application
+                        concept around recipe feedback.
+                    </li>
+
+                </ul>
+
+            </article>
+
+
+            <!-- PROJECT 6 -->
+
+            <article class="project-card glass">
+
+                <span class="project-number">
+                    06 — AI APPLICATION
+                </span>
+
+                <h3>
+                    Document Management System
+                </h3>
+
+                <p class="project-tech">
+                    AI • NLP • Document Processing
+                </p>
+
+                <ul>
+
+                    <li>
+                        Developed a concept for an intelligent
+                        document management workflow.
+                    </li>
+
+                    <li>
+                        Focused on document organization,
+                        retrieval and intelligent processing.
+                    </li>
+
+                </ul>
+
+            </article>
+
+
+        </div>
+
+    </div>
 
 </section>
-<li><a href="#experience">Experience</a></li>
-<!-- =========================
-     EXPERIENCE
-========================= -->
+
+
+<!-- ================= EXPERIENCE ================= -->
 
 <section id="experience" class="section">
 
-<div class="container">
+    <div class="container">
 
-<h2 class="section-title">
-Professional Experience
-</h2>
+        <div class="section-heading center">
 
-<p class="section-subtitle">
-My professional experience and transferable skills.
-</p>
+            <p class="eyebrow">
+                PROFESSIONAL EXPERIENCE
+            </p>
 
+            <h2>
+                Experience
+            </h2>
 
-<div class="card">
-
-<div class="experience-title">
-
-<h3>
-Administrative Assistant
-</h3>
-
-<span class="date">
-Jul 2021 – May 2026
-</span>
-
-</div>
-
-<p class="company">
-Mount Zion Medical College, Adoor
-</p>
-
-<ul>
-
-<li>
-Managed documentation, scheduling and cross-department
-coordination.
-</li>
-
-<li>
-Prepared and maintained spreadsheets, reports and records.
-</li>
-
-<li>
-Developed strong organization, accuracy, communication
-and stakeholder-management skills.
-</li>
-
-</ul>
-
-</div>
+        </div>
 
 
-<div class="card">
-
-<div class="experience-title">
-
-<h3>
-HR Intern
-</h3>
-
-<span class="date">
-Mar 2021 – Jun 2021
-</span>
-
-</div>
-
-<p class="company">
-Aashman Foundation — Remote
-</p>
-
-<ul>
-
-<li>
-Supported recruitment and onboarding workflows.
-</li>
-
-<li>
-Managed assigned tasks independently while coordinating
-with a distributed team.
-</li>
-
-</ul>
-
-</div>
+        <div class="timeline">
 
 
-<div class="card">
+            <div class="timeline-item glass">
 
-<div class="experience-title">
+                <span class="date">
+                    Jul 2021 – May 2026
+                </span>
 
-<h3>
-Software Developer Intern
-</h3>
+                <h3>
+                    Administrative Assistant
+                </h3>
 
-<span class="date">
-Jan 2018 – Jul 2018
-</span>
+                <h4>
+                    Mount Zion Medical College, Adoor
+                </h4>
 
-</div>
+                <ul>
 
-<p class="company">
-Inzenjer IT Solutions, Trivandrum
-</p>
+                    <li>
+                        Managed documentation, scheduling and
+                        cross-department coordination in a
+                        deadline-driven environment.
+                    </li>
 
-<ul>
+                    <li>
+                        Prepared and maintained spreadsheets,
+                        reports and records.
+                    </li>
 
-<li>
-Contributed to a live software project through coding
-and defect fixing.
-</li>
+                    <li>
+                        Developed strong organization, accuracy,
+                        communication and stakeholder-management
+                        skills.
+                    </li>
 
-<li>
-Applied coding standards and version-control practices.
-</li>
+                </ul>
 
-<li>
-Gained exposure to software planning, development
-and testing.
-</li>
-
-</ul>
-
-</div>
+            </div>
 
 
-</div>
+            <div class="timeline-item glass">
+
+                <span class="date">
+                    Mar 2021 – Jun 2021
+                </span>
+
+                <h3>
+                    HR Intern
+                </h3>
+
+                <h4>
+                    Aashman Foundation — Remote
+                </h4>
+
+                <ul>
+
+                    <li>
+                        Supported recruitment and onboarding
+                        workflows.
+                    </li>
+
+                    <li>
+                        Managed assigned tasks independently
+                        while coordinating with a distributed team.
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="timeline-item glass">
+
+                <span class="date">
+                    Jan 2018 – Jul 2018
+                </span>
+
+                <h3>
+                    Software Developer Intern
+                </h3>
+
+                <h4>
+                    Inzenjer IT Solutions, Trivandrum
+                </h4>
+
+                <ul>
+
+                    <li>
+                        Contributed to a live software project
+                        through coding and defect fixing.
+                    </li>
+
+                    <li>
+                        Applied coding standards and version-control
+                        practices.
+                    </li>
+
+                    <li>
+                        Gained exposure to software planning,
+                        development and testing.
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+        </div>
+
+    </div>
 
 </section>
 
-<li><a href="#education">Education</a></li>
-<!-- =========================
-     EDUCATION
-========================= -->
+
+<!-- ================= EDUCATION ================= -->
 
 <section id="education" class="section">
 
-<div class="container">
+    <div class="container">
 
-<h2 class="section-title">
-Education
-</h2>
+        <div class="section-heading center">
 
+            <p class="eyebrow">
+                EDUCATION & CERTIFICATION
+            </p>
 
-<div class="card education">
+            <h2>
+                Academic Background
+            </h2>
 
-<h3>
-B.Tech — Computer Science & Engineering
-</h3>
-
-<p>
-Younus College of Engineering — 2018
-</p>
-
-</div>
+        </div>
 
 
-<div class="card education">
-
-<h3>
-MBA — Human Resource Management
-</h3>
-
-<p>
-IGNOU — 2022
-</p>
-
-</div>
+        <div class="education-grid">
 
 
-<div class="card certification">
+            <div class="education-card glass">
 
-<h3>
-Certified Specialist in Artificial Intelligence and Machine Learning
-</h3>
+                <h3>
+                    B.Tech — Computer Science & Engineering
+                </h3>
 
-<p>
-ICT Academy of Kerala — 2026
-</p>
+                <p>
+                    Younus College of Engineering
+                </p>
 
-<br>
+                <span>
+                    2018
+                </span>
 
-<p>
-Core coursework completed; capstone/internship in progress.
-</p>
-
-</div>
+            </div>
 
 
-</div>
+            <div class="education-card glass">
+
+                <h3>
+                    MBA — Human Resource Management
+                </h3>
+
+                <p>
+                    IGNOU
+                </p>
+
+                <span>
+                    2022
+                </span>
+
+            </div>
+
+
+            <div class="education-card glass">
+
+                <h3>
+                    Certified Specialist in
+                    Artificial Intelligence & Machine Learning
+                </h3>
+
+                <p>
+                    ICT Academy of Kerala
+                </p>
+
+                <span>
+                    2026
+                </span>
+
+                <small>
+                    Core coursework completed;
+                    capstone/internship in progress.
+                </small>
+
+            </div>
+
+
+        </div>
+
+    </div>
 
 </section>
-  
-<li><a href="#additional skills">Additional Skills</a></li>
-<!-- =========================
-     ADDITIONAL TRAINING
-========================= -->
+
+
+<!-- ================= ADDITIONAL ================= -->
 
 <section class="section">
 
-<div class="container">
+    <div class="container">
 
-<h2 class="section-title">
-Additional Training
-</h2>
+        <div class="section-heading center">
 
+            <p class="eyebrow">
+                ADDITIONAL
+            </p>
 
-<div class="card">
+            <h2>
+                Training & Languages
+            </h2>
 
-<ul style="padding-left:20px;line-height:2;color:#64748b;">
-
-<li>
-Implant Training — KELTRON Knowledge Centre, Trivandrum
-</li>
-
-<li>
-Workshop — Internet of Things
-</li>
-
-<li>
-Workshop — Android Development
-</li>
-
-<li>
-Workshop — Python Programming
-</li>
-
-<li>
-Seminar — Security Analysis for Supercomputing User Behaviour
-</li>
-
-<li>
-Participant — Kerala Startup Mission events
-</li>
-
-</ul>
-
-</div>
+        </div>
 
 
-<h3 style="margin:40px 0 20px;">
-Languages
-</h3>
+        <div class="additional-card glass">
+
+            <h3>
+                Additional Training
+            </h3>
+
+            <ul>
+
+                <li>
+                    Implant Training — KELTRON Knowledge Centre,
+                    Trivandrum
+                </li>
+
+                <li>
+                    Workshop — Internet of Things
+                </li>
+
+                <li>
+                    Workshop — Android Development
+                </li>
+
+                <li>
+                    Workshop — Python Programming
+                </li>
+
+                <li>
+                    Seminar — Security Analysis for
+                    Supercomputing User Behaviour
+                </li>
+
+                <li>
+                    Participant — Kerala Startup Mission events
+                </li>
+
+            </ul>
 
 
-<div class="languages">
+            <h3 class="language-title">
+                Languages
+            </h3>
 
-<div class="language">
-English
-</div>
+            <div class="languages">
 
-<div class="language">
-Malayalam
-</div>
+                <span>English</span>
+                <span>Malayalam</span>
+                <span>Hindi</span>
+                <span>Tamil</span>
 
-<div class="language">
-Hindi
-</div>
+            </div>
 
-<div class="language">
-Tamil
-</div>
+        </div>
 
-</div>
-
-</div>
-
-</section>
-  
-<li><a href="#contact">Contact</a></li>
-</ul>
-</nav>
-
-<div class="hero">
-
-<div class="profile-card glass fade">
-
-<br>
-
-</div>
-
-<div class="hero-content fade">
-
-<h1>Rinimol R</h1>
-
-<h2>Building Intelligent Solutions with AI & Machine Learning</h2>
-
-<p>
-Passionate AI and Machine Learning Engineer with interests in
-Artificial Intelligence, automation, web technologies and intelligent
-document processing systems. Dedicated to building innovative
-solutions that improve productivity and user experience.
-</p>
-  
-<p class="hero-tags">
-
-Machine Learning &nbsp; • &nbsp;
-Deep Learning &nbsp; • &nbsp;
-NLP &nbsp; • &nbsp;
-Computer Vision
-
-</p>
-
-</div>
-
-</div>
-
-<section id="about" class="fade">
-<h2 class="section-title">About Me</h2>
-
-<div class="glass" style="padding:30px">
-<p>
-I specialize in AI/ML applications and intelligent software solutions.
-My goal is to create impactful technology that simplifies workflows,
-enhances decision-making and solves real-world challenges.
-</p>
-</div>
-</section>
-
-<section id="skills" class="fade">
-
-<h2 class="section-title">Skills</h2>
-
-<div class="skills">
-
-<div class="skill glass">
-<h3>AI / ML</h3>
-<p>Machine Learning, Deep Learning, NLP</p>
-</div>
-
-<div class="skill glass">
-<h3>VS Code</h3>
-<p>Development & Debugging</p>
-</div>
-
-<div class="skill glass">
-<h3>HTML</h3>
-<p>Responsive Web Design</p>
-</div>
-
-</div>
+    </div>
 
 </section>
 
-<section id="projects" class="fade">
 
-<h2 class="section-title">Projects</h2>
+<!-- ================= CONTACT ================= -->
 
-<div class="projects">
+<section id="contact" class="section contact-section">
 
-<div class="project glass">
-<h3>Document Management System</h3>
+    <div class="container">
 
-<p>
-AI-powered document management platform for storing,
-organizing, retrieving and analyzing digital documents.
-Features smart search, categorization and workflow automation.
-</p>
+        <div class="contact-card glass">
 
-</div>
+            <p class="eyebrow">
+                CONTACT
+            </p>
 
-<div class="project glass">
-<h3>Future Project</h3>
+            <h2>
+                Let's Connect
+            </h2>
 
-<p>
-Add your upcoming AI or Machine Learning projects here.
-</p>
+            <p>
+                Interested in AI/ML opportunities, internships,
+                collaborations or technical projects?
+            </p>
 
-</div>
-
-</div>
-
-</section>
-
-<section id="contact" class="fade">
-
-<div class="contact glass">
-
-<h2 class="section-title">Contact</h2>
-
-</div>
-
-</section>
-
-<!-- =========================
-     CONTACT
-========================= -->
-
-<section id="contact" class="section">
-
-<div class="container">
-
-<div class="card contact">
-
-<h2 class="section-title">
-Let's Connect
-</h2>
-
-<p>
-Interested in AI/ML opportunities, internships,
-collaborations and innovative technology projects?
-Feel free to connect with me.
-</p>
+            <p class="privacy-note">
+                Contact details are protected from casual
+                scraping. Use the buttons below to connect.
+            </p>
 
 
-<div class="contact-links">
+            <div class="contact-buttons">
 
-<a
-href="mailto:rini.aiprofessional@gmail.com"
-class="button primary">
+                <button
+                    type="button"
+                    id="emailBtn"
+                    class="contact-btn primary-btn">
 
-Email
+                    ✉ Email Me
 
-</a>
-
-
-<a
-href="https://linkedin.com/in/rinimol-r-031283129"
-target="_blank"
-class="button secondary">
-
-LinkedIn
-
-</a>
+                </button>
 
 
-<a
-href="https://github.com/Rini892"
-target="_blank"
-class="button secondary">
+                <button
+                    type="button"
+                    id="phoneBtn"
+                    class="contact-btn secondary-btn">
 
-GitHub Profile
+                    ☎ Call Me
 
-</a>
+                </button>
 
 
-<a
-href="https://portfolio-knives.vercel.app"
-target="_blank"
-class="button secondary">
+                <a
+                    href="https://www.linkedin.com/in/rinimol-r-031283129/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contact-btn secondary-btn">
 
-Portfolio
+                    LinkedIn
 
-</a>
+                </a>
 
-</div>
 
-</div>
+                <a
+                    href="https://github.com/Rini892"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contact-btn secondary-btn">
 
-</div>
+                    GitHub
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </section>
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
 
 <footer>
-© 2026 Rinimol R | AI/ML Engineer
+
+    <div class="container">
+
+        <p>
+            © 2026 Rinimol R
+        </p>
+
+        <p>
+            AI/ML Engineer • Machine Learning • Deep Learning • NLP • Computer Vision
+        </p>
+
+    </div>
+
 </footer>
 
-</div>
 
-<script>
-
-document.getElementById("imageInput")
-.addEventListener("change", function(event){
-
-const file = event.target.files[0];
-
-if(file){
-
-const reader = new FileReader();
-
-reader.onload = function(e){
-document.getElementById("profileImage").src = e.target.result;
-};
-
-reader.readAsDataURL(file);
-
-}
-});
-
-const observer = new IntersectionObserver(entries=>{
-
-entries.forEach(entry=>{
-
-if(entry.isIntersecting){
-entry.target.classList.add("show");
-}
-
-});
-
-});
-
-document.querySelectorAll(".fade").forEach(el=>{
-observer.observe(el);
-});
-
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
-
+```
